@@ -20,6 +20,8 @@ Finally, run the tst suite to verify that everything is working correctly:
 $ rails test
 ```
 
+To run the integration tests run `rails test:integration`
+
 If the test suite passes, you'll be ready to run the app in a local server:
 
 ```

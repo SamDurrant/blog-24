@@ -55,6 +55,9 @@ Rails.application.configure do
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
+  # prevents error rgb is missing when running specs
+  # https://stackoverflow.com/questions/71805735/error-function-rgb-is-missing-argument-green-in-sass
+  config.assets.css_compressor = nil
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
 end
