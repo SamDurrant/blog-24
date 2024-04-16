@@ -1,0 +1,15 @@
+<% provide(:title, @user.name) %>
+
+<div class="flex">
+  <aside class="flex gap-4 items-center">
+    <%= gravatar_for @user %>
+    <h1><%= @user.name %></h1>
+  </aside>
+</div>
+
+<!-- 
+  Debugging options:
+  <%= simple_format @user.to_yaml %>
+  <%= @user.inspect %> 
+-->
+

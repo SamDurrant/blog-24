@@ -14,8 +14,12 @@
   <body class="bg-stone-100">
     <%= render 'layouts/header' %>
     <main class="container mx-auto pt-28 pb-20 min-h-[calc(100vh-3.5rem)] px-5">
+      <% flash.each do |message_type, message| %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type} absolute translate-x-[-50%] left-2/4 top-6") %>
+        <% end %>
       <%= yield %>
     </main>
     <%= render 'layouts/footer' %>
+    <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
