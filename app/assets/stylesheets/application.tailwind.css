@@ -21,6 +21,22 @@
     @apply bg-emerald-400 border-solid border border-emerald-800;
   }
 
+  /* Dropdowns */
+  .dropdown-menu {
+    display: none;
+  }
+  .dropdown-menu.active {
+    display: block;
+  }
+
+  #navbar-menu {
+    display: flex;
+  }
+
+  #navbar-menu.collapse {
+    display: none;
+  }
+
   /* Forms */
   .field_with_errors .form-control {
     @apply border-solid border border-red-800;
